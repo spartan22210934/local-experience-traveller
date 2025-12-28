@@ -1,0 +1,129 @@
+.post-details-page {
+    padding-bottom: 60px;
+}
+
+.post-header {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    margin-bottom: -60px;
+    /* Overlap effect */
+    border-radius: 0 0 var(--radius) var(--radius);
+    overflow: hidden;
+}
+
+.detail-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+}
+
+.detail-meta {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.detail-category {
+    background: var(--primary);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.detail-date {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    backdrop-filter: blur(4px);
+}
+
+.detail-content {
+    position: relative;
+    z-index: 10;
+    padding: 40px;
+    margin-top: 0;
+}
+
+.detail-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.detail-location {
+    color: var(--text-muted);
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.detail-desc {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 50px;
+    white-space: pre-wrap;
+}
+
+.comments-section h3 {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.comments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.comment-item {
+    display: flex;
+    gap: 15px;
+}
+
+.comment-avatar {
+    background: var(--bg-dark);
+    padding: 10px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comment-body {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 10px 15px;
+    border-radius: var(--radius);
+    flex: 1;
+}
+
+.comment-author {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: var(--primary);
+}
+
+.comment-form {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-icon-only {
+    padding: 0;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
